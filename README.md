@@ -77,12 +77,14 @@ Now that this service is up, let's go ahead and get some data in there!
 
 ## Part 6: Python scripts
 
-First up we need to load some data in from the PostgreSQL information schema into Meilisearch so let's get a python environment setup and clone the repo with the code in it.
+First up we need to load some data in from the PostgreSQL information schema into Meilisearch so let's clone my repo and get a python environment setup and clone the repo with the code in it.
 
 ```shell
+git clone git@github.com:cloud-shuttle/text2sql-blog.git
+cd text2sql-blog
 uv venv
 source .venv/bin/activate
-pip install psycopg2-binary python-dotenv meilisearch ollama
+uv pip install psycopg2-binary python-dotenv meilisearch ollama
 ```
 
 Then copy the below into your dot env (.env) file (again this is for local testing only and not for prod use cases)
@@ -149,5 +151,3 @@ SELECT COUNT(*) FROM orders WHERE ship_country = 'Belgium' AND order_date BETWEE
 ```
 
 Awesome so it works for this one use case and obviously productionising this and going through the edge case would be some work but I thought, it's Sunday, let's have some fun.
-
-Thanks - please reach out to me on [LinkedIn](https://www.linkedin.com/in/peterhanssens/) if you have any questions!
