@@ -1,7 +1,17 @@
 
 Hey folks, we are going to build out a text2sql solution. To do that first up we need to install ollama and download the duckdb-nsql 7b parameter LLM.
 
-<iframe src="https://youtu.be/XDktyydC3hQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<!-- this is the embedded video minus this comment -->
+
+<div style="position: relative; width: 100%; padding-bottom: 56.25%">
+<iframe src="https://youtu.be/XDktyydC3hQ" 
+        title="Text2SQL Demo and Blog" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        style="position: absolute; width: 100%; height: 100%;">
+</iframe>
+</div>
+
+<!-- end embedded video -->
 
 
 Go to https://ollama.com/ and download the binary (going to assume you're on a mac for this blog)
